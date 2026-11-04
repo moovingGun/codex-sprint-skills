@@ -8,7 +8,7 @@ license: Apache-2.0
 
 Modified adaptation, 2026-11-04. Source, revision, and changes: [ATTRIBUTION.md](ATTRIBUTION.md).
 필요한 서비스만 사용한다. Docker 확인을 마지막의 새 프로젝트로 만들지 않는다.
-시간 배분은 프로젝트 AGENTS.md를 따르고, 없다면 통합 검증 예산 안에서 진행한다.
+마감과 남은 시간은 사용자 요청을 따른다. 별도의 고정 Docker 작업 시간은 두지 않는다.
 
 ## 실행 골격 단계
 - Docker·의존성 사용 가능 여부를 짧게 확인하고 최소 Dockerfile·compose.yaml을 준비한다.

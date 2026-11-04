@@ -33,6 +33,13 @@ Reviewed on 2026-11-04. These are instruction-only Skill adaptations.
 - No timed web-service development, Docker deployment or coding-agent behavioral evaluation
   was performed as part of these packaging/documentation checks.
 
+## Request-scoped timing revision (2026-11-04)
+
+- Checked changed frontmatter/relative links and reviewed active instructions for fixed deadlines.
+- Fixed timing in prior changelog/attribution entries is historical, not current instruction.
+- Existing license and installer behavior were not changed; their previous checks were reused.
+- No timed service-development or agent behavioral run was performed.
+
 ## Limits
 
 These checks validate packaging and source attribution, not coding-agent performance.

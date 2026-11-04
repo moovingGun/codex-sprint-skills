@@ -7,7 +7,7 @@
     "source_url": "https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/writing-plans/SKILL.md",
     "license": "MIT",
     "modified_on": "2026-11-04",
-    "changes": "계획 10분과 단일 시간표, 골격 우선 구현·검증 병행, 통과 근거 재사용과 제출 버퍼를 적용했다.",
+    "changes": "고정 시간표 없이 요청별 마감·첫 결과물 목표를 적용한다. 골격 우선 구현과 검증 병행, 변경 영향 중심 재검증을 따른다.",
     "bundled_executable_scripts": false,
     "mandatory_external_services": false
   },
@@ -43,7 +43,7 @@
     "source_url": "https://github.com/docker/skills/blob/090ff3d39db5f8bc55d4e951c26218e7c95ea2d3/skills/docker-compose-patterns/SKILL.md",
     "license": "Apache-2.0",
     "modified_on": "2026-11-04",
-    "changes": "초기 골격과 최종 통합 검사를 연결했다. 실제 볼륨 확인, 최소 준비 상태 처리, 살아 있는 워커를 API 재기동으로 실패 처리하지 않는 조건을 추가했다.",
+    "changes": "초기 골격과 최종 통합 검사를 연결했다. 실제 볼륨 확인, 최소 준비 상태 처리, 살아 있는 워커를 API 재기동으로 실패 처리하지 않는 조건을 추가했다. 고정 시간 배분을 제거하고 사용자 요청의 마감·남은 시간을 따른다.",
     "bundled_executable_scripts": false,
     "mandatory_external_services": false
   },
@@ -55,7 +55,7 @@
     "source_url": "https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/verification-before-completion/SKILL.md",
     "license": "MIT",
     "modified_on": "2026-11-04",
-    "changes": "전체 검사 반복 의무를 없애고 기존 증거·영향 범위를 기준으로 확인한다. 실제 세션 히스토리와 제출 계약을 복원했다.",
+    "changes": "전체 검사 반복 의무를 없애고 기존 증거·영향 범위를 기준으로 확인한다. 실제 세션 히스토리와 제출 계약을 복원했다. 고정 시간 배분을 제거하고 사용자 요청의 마감·남은 시간을 따른다.",
     "bundled_executable_scripts": false,
     "mandatory_external_services": false
   },
@@ -68,7 +68,7 @@
     "license": "MIT",
     "modified_on": "2026-11-04",
     "original_work": true,
-    "changes": "직접 작성 Skill 유지. 명시 요청 시에만 사용하며 기본 150분 개발·제출 흐름과 설치에서 제외한다.",
+    "changes": "직접 작성 Skill 유지. 명시 요청 시에만 사용하며 기본 개발·제출 흐름과 설치에서 제외한다. 고정 소요시간은 두지 않는다.",
     "bundled_executable_scripts": false,
     "mandatory_external_services": false
   }
