@@ -1,0 +1,20 @@
+# License scope
+
+This repository contains separately licensed adaptations. It is not uniformly licensed.
+Each Skill's SKILL.md and ATTRIBUTION.md are distributed under the license identified
+below, with the complete upstream license text preserved in that Skill's LICENSE file.
+
+- skills/sprint-writing-plans/: MIT
+- skills/sprint-test-driven-development/: MIT
+- skills/sprint-property-based-testing/: CC-BY-SA-4.0
+- skills/sprint-docker-compose/: Apache-2.0
+- skills/sprint-verification/: MIT
+
+Root documentation and metadata (README.md, SOURCES.md, CHANGELOG.md, sources.json,
+VALIDATION.md and .gitignore): CC0-1.0. To the extent possible under law, the repository
+contributors waive copyright and related rights in those root files under the
+CC0 1.0 Universal public-domain dedication:
+https://creativecommons.org/publicdomain/zero/1.0/
+
+No root-file dedication replaces the licenses of the individual Skills or upstream works.
+Preserve per-Skill LICENSE, ATTRIBUTION.md, and modification notices when copying.
