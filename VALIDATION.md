@@ -22,6 +22,17 @@ Reviewed on 2026-11-04. These are instruction-only Skill adaptations.
 - Confirmed each adaptation's ATTRIBUTION.md records the LITE modification.
 - Confirmed `sprint-understanding-check/LICENSE` names the repository author, not an upstream author.
 
+## Minimum-check revision (2026-11-04)
+
+- Parsed all six Skill frontmatters and checked manifest/name/license consistency.
+- Checked relative links and unchanged upstream license texts for five adaptations.
+- Checked the README shell block with bash syntax validation and temporary fixtures:
+  fresh installation includes five default Skills; existing AGENTS.md and Skill files survive.
+- Reviewed the single 150-minute budget, optional understanding step, impact-based reruns,
+  actual export schema, dataset version handling and session-history submission reminders.
+- No timed web-service development, Docker deployment or coding-agent behavioral evaluation
+  was performed as part of these packaging/documentation checks.
+
 ## Limits
 
 These checks validate packaging and source attribution, not coding-agent performance.

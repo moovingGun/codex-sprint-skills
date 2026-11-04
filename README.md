@@ -1,41 +1,55 @@
 # Codex Sprint Skills
 
-**2시간 30분 제한 웹 서비스 개발**을 위한 6개의 Agent Skill입니다 (수정본 5개 + 직접 작성 1개).
-모든 Skill은 **항상 LITE 모드**로 동작합니다. 점수와 직결되는 검증만 남기고 단계별 시간 상한을 정했습니다.
-Codex의 `SKILL.md` 폴더 형식입니다.
+**150분 안에 실행 가능한 필수 웹 서비스를 완성**하기 위한 Agent Skill입니다.
+기본 흐름은 수정 Skill 5개이며, 이해도 확인 Skill 1개는 명시 요청 시에만 사용하는 선택 항목입니다.
+검증을 생략해 성공이라 하지 않되, **바뀐 부분만 다시 확인하고 통과한 검사를 반복하지 않습니다.**
 
-## 포함된 Skill
+## 기본 흐름
 
-| 순서 | Skill | 시간 | 하는 일 |
-|---|---|---|---|
-| 1 | [sprint-writing-plans](skills/sprint-writing-plans/SKILL.md) | 0:00~0:15 | README → 3열 체크리스트, 담당자 질문, 시간표 |
-| 2 | [sprint-property-based-testing](skills/sprint-property-based-testing/SKILL.md) | 0:15~0:35 | 독립 결과 검증기, 출력 깨뜨리기, 하한 표시 |
-| 2 | [sprint-test-driven-development](skills/sprint-test-driven-development/SKILL.md) | 0:15~0:35 | 필수 테스트 4개만 Red부터 |
-| 3 | (구현) | 0:35~1:45 | 데이터 적용 → 생성 → 화면 → 내보내기 → 역할 |
-| 4 | [sprint-docker-compose](skills/sprint-docker-compose/SKILL.md) | 1:45~2:05 | 최소 Docker 구성, 마지막 1회 기동 확인 |
-| 5 | [sprint-verification](skills/sprint-verification/SKILL.md) | 2:05~2:20 | 전체 테스트 1회, 체크리스트·제출 문서 정리 |
-| 6 | [sprint-understanding-check](skills/sprint-understanding-check/SKILL.md) | 2:20~2:30 | 예상 질문 6개와 근거 위치 (직접 작성) |
+| Skill | 사용하는 시점 |
+|---|---|
+| [sprint-writing-plans](skills/sprint-writing-plans/SKILL.md) | 짧은 요구 체크리스트를 만들고 실행 골격부터 시작 |
+| [sprint-test-driven-development](skills/sprint-test-driven-development/SKILL.md) | 관련 기능과 함께 핵심 실패 계약을 작은 테스트로 확인 |
+| [sprint-property-based-testing](skills/sprint-property-based-testing/SKILL.md) | 계산 결과의 독립 제약 검증과 출력 파손 사례 확인 |
+| [sprint-docker-compose](skills/sprint-docker-compose/SKILL.md) | Docker 골격을 일찍 준비하고 최종 통합과 같은 실행에서 확인 |
+| [sprint-verification](skills/sprint-verification/SKILL.md) | 핵심 흐름·정확한 JSON 출력·필수 제출물 점검 |
 
-LITE 모드에서 하지 않는 것: 랜덤 property test, 완전탐색 비교, 변이 테스트, compose 재시작 시나리오,
-변경마다 전체 테스트 재실행.
+시간표의 단일 기준은 [templates/AGENTS.md](templates/AGENTS.md)입니다.
+계획 10분 → 골격 15분 → 구현 80분 → 통합 20분 → 문서 15분 → 수정·제출 버퍼 10분입니다.
+검증기 전체와 모든 테스트를 먼저 만들지 않습니다. 필요한 검증은 기능과 함께 작성합니다.
+출력 계약·데이터 보존·버전·권한을 작은 통합 흐름으로 묶어 확인합니다.
+랜덤 생성·완전탐색·변이 캠페인·커버리지 목표·장시간 전체 검사를 강제하지 않습니다.
+빠른 기존 전체 테스트가 핵심 검사를 포함하면 그것 하나로 대체합니다.
+최종 확인 이후 수정하면 재현 테스트와 영향받는 검사만 다시 실행합니다.
 
-순서·기본 구조·검증 기준을 한 번에 적용하려면 [templates/AGENTS.md](templates/AGENTS.md)를 프로젝트 루트에 복사하세요.
+선택: [sprint-understanding-check](skills/sprint-understanding-check/SKILL.md).
+기본 시간표·자동 작업 순서에 포함하지 않으며 명시 요청이 있을 때만 사용합니다.
 
-1~5번은 원본을 수정한 파생본이고, 6번은 직접 작성한 Skill입니다. [출처](SOURCES.md), [변경 내역](CHANGELOG.md),
-[라이선스 범위](LICENSE), [검증 기록](VALIDATION.md)을 함께 확인하세요.
-Skill 내부에는 실행 스크립트·hooks·MCP 설정·필수 외부 서비스가 없습니다.
-지침을 사용하는 에이전트는 파일을 수정하고 테스트·Docker 명령을 실행할 수 있습니다.
-패키지 설치, 이미지 pull/build, 출처 확인에는 네트워크가 필요할 수 있습니다.
+5개 수정본의 [출처](SOURCES.md), [변경 내역](CHANGELOG.md), [라이선스 범위](LICENSE),
+[검증 기록](VALIDATION.md)을 확인하세요. 실행 스크립트·hooks·MCP 설정·필수 외부 서비스는 없습니다.
+에이전트는 파일·테스트·Docker 명령을 사용할 수 있고 패키지 설치·이미지 pull/build는
+네트워크를 사용할 수 있습니다. 완성 앱이나 과제 정답을 제공하는 저장소가 아닙니다.
 
 ## 설치 — 프로젝트별 복사 권장
 
 프로젝트의 부모 폴더에서 이 저장소를 복제한 뒤, 프로젝트 루트에서 복사합니다.
 
 ```bash
+# 프로젝트 루트에서 실행. 복제 대상이 이미 있으면 새로 clone하지 말고 먼저 확인합니다.
 git clone https://github.com/moovingGun/codex-sprint-skills.git ../codex-sprint-skills
 mkdir -p .agents/skills
-cp -R ../codex-sprint-skills/skills/sprint-* .agents/skills/
-cp ../codex-sprint-skills/templates/AGENTS.md ./AGENTS.md   # 기존 AGENTS.md가 있으면 합치기
+for skill in sprint-writing-plans sprint-test-driven-development sprint-property-based-testing sprint-docker-compose sprint-verification; do
+  if [ -e ".agents/skills/$skill" ]; then
+    echo "이미 있음: .agents/skills/$skill — 차이를 확인해 수동 병합"
+  else
+    cp -R "../codex-sprint-skills/skills/$skill" .agents/skills/
+  fi
+done
+if [ -e AGENTS.md ]; then
+  echo "기존 AGENTS.md와 ../codex-sprint-skills/templates/AGENTS.md를 비교해 병합하세요."
+else
+  cp -n ../codex-sprint-skills/templates/AGENTS.md ./AGENTS.md
+fi
 git -C ../codex-sprint-skills rev-parse HEAD
 ```
 
@@ -53,13 +67,12 @@ checkout한 뒤 복사하세요. 폴더 전체를 복사해야 LICENSE와 ATTRIB
 $sprint-writing-plans README를 요구 ID·구현 파일·테스트가 연결된 계획으로 정리하고 구현을 진행해줘.
 $sprint-test-driven-development 데이터 적용 실패 시 기존 데이터가 유지되는 계약부터 테스트해줘.
 $sprint-property-based-testing 계산 결과의 독립 검증기를 만들고 잘못된 출력이 거부되는지 확인해줘.
-$sprint-docker-compose 실제 스택에 필요한 최소 구성으로 초기화·헬스체크·재시작을 검증해줘.
-$sprint-verification README와 실제 제출물을 대조하고 근거 없는 완료와 미실행 검사를 알려줘.
-$sprint-understanding-check 예상 질문 6개와 각 답의 근거 위치·한계를 정리해줘.
+$sprint-docker-compose 최소 실행 구성을 만들고 최종 통합과 묶어 기동·영속화만 확인해줘.
+$sprint-verification 기존 통과 근거를 재사용하고 변경 영향과 필수 제출물만 확인해줘.
 ```
 
-한 번에 다섯 Skill을 모두 호출할 필요는 없습니다. 현재 단계에 필요한 것을 사용하세요.
-이 저장소는 완성 앱이나 과제 정답을 제공하지 않습니다. `sprint-understanding-check`는 답안을 만들지 않고 근거 위치만 정리합니다.
+현재 단계에 필요한 Skill만 사용하세요. 이해도 Skill은 기본 설치에서 제외합니다.
+원하면 해당 폴더 전체를 별도로 복사한 뒤 명시적으로 호출할 수 있습니다.
 
 ## 공개 자료와 작업 이력
 

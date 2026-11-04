@@ -1,20 +1,22 @@
 ---
 name: sprint-understanding-check
-description: 제출 직전 10분 안에 예상 평가 질문 6개와 각 답의 근거 위치·한계를 정리해, AI가 만든 구현을 사람이 자기 말로 설명할 수 있게 한다. Use before submission for understanding check, expected reviewer questions, design rationale.
+description: 사용자가 명시적으로 요청한 경우에만 예상 평가 질문과 근거 위치를 정리한다. 기본 150분 개발·제출 흐름에서는 사용하지 않는다.
 license: MIT
 ---
 
 # Sprint Understanding Check (LITE)
 
 Original work, 2026-11-04. License: [LICENSE](LICENSE).
-항상 LITE 모드로 동작한다. 총 10분 이내. 완성 답안을 쓰지 않고 뼈대와 근거 위치만 정리한다.
+기본 150분 개발 흐름에서 제외한다. 사용자가 명시적으로 요청한 경우에만 수행하며,
+필수 구현·제출 버퍼를 사용하지 않는다. 완성 답안을 쓰지 않고 근거 위치만 정리한다.
 
 ## 목적
 제출 후 평가자가 제출물을 읽고 "만든 사람이 이해하고 있는가"를 묻는 질문에 대비한다.
 사람이 외울 문장이 아니라, 답할 때 떠올릴 근거를 정리한다.
 
 ## 산출물: UNDERSTANDING.md
-제출물에 포함해도 되는지 규정을 확인한다. 애매하면 작업 디렉터리 밖에 둔다.
+제출물에 포함할 수 있는지는 상세 가이드를 따른다. 허용 여부가 불명확하면
+파일 위치를 옮겨 규칙을 우회하지 말고 생성을 보류하거나 허용된 채팅에서만 안내한다.
 
 ### 예상 질문 6개
 아래 유형마다 이번 구현에 맞춘 질문 1개를 만든다.

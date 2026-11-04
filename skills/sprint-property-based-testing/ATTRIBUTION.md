@@ -21,3 +21,8 @@
 출처·라이선스 링크를 읽기 위해 네트워크가 필요할 수 있으나 Skill 실행에 필수는 아니다.
 
 This modified Skill is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Retain attribution, the license, and modification notices when sharing this adaptation.
+
+## 2026-11-04 최소 검증 개정
+
+검증기 선완성 의무를 없앴다. 버전 공개 조건, 출력 파손 2종, 유효한 하한의 조건과 기준선 대안을 명시했다.
+기존의 광범위한 검사·예시는 현재 SKILL.md의 필수 범위를 뜻하지 않는다.
