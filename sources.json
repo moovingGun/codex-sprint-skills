@@ -7,7 +7,7 @@
     "source_url": "https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/writing-plans/SKILL.md",
     "license": "MIT",
     "modified_on": "2026-11-04",
-    "changes": "승인 대기·필수 후속 Skill·서브에이전트 지시를 제거하고 요구 ID 추적, 남은 시간 배분, 실제 협업 결정 기록을 추가했다.",
+    "changes": "승인 대기·필수 후속 Skill·서브에이전트 지시를 제거하고 요구 ID 추적, 남은 시간 배분, 실제 협업 결정 기록을 추가했다. 2026-11-04 LITE 개정: 2시간 30분 기준 LITE 모드를 기본값으로 고정했다.",
     "bundled_executable_scripts": false,
     "mandatory_external_services": false
   },
@@ -19,7 +19,7 @@
     "source_url": "https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/test-driven-development/SKILL.md",
     "license": "MIT",
     "modified_on": "2026-11-04",
-    "changes": "일괄 코드 삭제 지시를 제거하고 핵심 계약 중심 TDD, 데이터 보존·권한·버전 경계, 격리된 변이 검증과 기존 코드 회귀 테스트를 추가했다.",
+    "changes": "일괄 코드 삭제 지시를 제거하고 핵심 계약 중심 TDD, 데이터 보존·권한·버전 경계, 격리된 변이 검증과 기존 코드 회귀 테스트를 추가했다. 2026-11-04 LITE 개정: 2시간 30분 기준 LITE 모드를 기본값으로 고정했다.",
     "bundled_executable_scripts": false,
     "mandatory_external_services": false
   },
@@ -31,7 +31,7 @@
     "source_url": "https://github.com/trailofbits/skills/blob/711af095215ad4ecde5b90cd1d0124b3f1c4ca9e/plugins/property-based-testing/skills/property-based-testing/SKILL.md",
     "license": "CC-BY-SA-4.0",
     "modified_on": "2026-11-04",
-    "changes": "불변식·oracle·반례 원칙을 축약하고 독립 결과 검증, 출력 파손 테스트, 소형 완전탐색, 하한 가정·실행 가능성과 최적성 구분을 추가했다.",
+    "changes": "불변식·oracle·반례 원칙을 축약하고 독립 결과 검증, 출력 파손 테스트, 소형 완전탐색, 하한 가정·실행 가능성과 최적성 구분을 추가했다. 2026-11-04 LITE 개정: 2시간 30분 기준 LITE 모드를 기본값으로 고정했다.",
     "bundled_executable_scripts": false,
     "mandatory_external_services": false
   },
@@ -43,7 +43,7 @@
     "source_url": "https://github.com/docker/skills/blob/090ff3d39db5f8bc55d4e951c26218e7c95ea2d3/skills/docker-compose-patterns/SKILL.md",
     "license": "Apache-2.0",
     "modified_on": "2026-11-04",
-    "changes": "Compose 지침을 축약하고 별도 Skill·동봉 스크립트·샘플 서비스 의존성을 제거했다. 실제 런타임 확인, 빈 DB 초기화, 재시작과 데이터 보존 검증을 추가했다.",
+    "changes": "Compose 지침을 축약하고 별도 Skill·동봉 스크립트·샘플 서비스 의존성을 제거했다. 실제 런타임 확인, 빈 DB 초기화, 재시작과 데이터 보존 검증을 추가했다. 2026-11-04 LITE 개정: 2시간 30분 기준 LITE 모드를 기본값으로 고정했다.",
     "bundled_executable_scripts": false,
     "mandatory_external_services": false
   },
@@ -55,7 +55,20 @@
     "source_url": "https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/verification-before-completion/SKILL.md",
     "license": "MIT",
     "modified_on": "2026-11-04",
-    "changes": "근거 우선 원칙을 유지하고 매 메시지 재실행 의무를 최종 변경 이후 관련 검증으로 조정했다. 요구별 매핑, 재현 가능한 실행 문서와 실제 협업·세션 기록 확인을 추가했다.",
+    "changes": "근거 우선 원칙을 유지하고 매 메시지 재실행 의무를 최종 변경 이후 관련 검증으로 조정했다. 요구별 매핑, 재현 가능한 실행 문서와 실제 협업·세션 기록 확인을 추가했다. 2026-11-04 LITE 개정: 2시간 30분 기준 LITE 모드를 기본값으로 고정했다.",
+    "bundled_executable_scripts": false,
+    "mandatory_external_services": false
+  },
+  {
+    "skill": "sprint-understanding-check",
+    "source_repository": null,
+    "source_revision": null,
+    "source_path": null,
+    "source_url": null,
+    "license": "MIT",
+    "modified_on": "2026-11-04",
+    "original_work": true,
+    "changes": "직접 작성. 제출 전 예상 평가 질문 6개와 근거 위치·한계 정리.",
     "bundled_executable_scripts": false,
     "mandatory_external_services": false
   }

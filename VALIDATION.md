@@ -5,7 +5,7 @@ Reviewed on 2026-11-04. These are instruction-only Skill adaptations.
 ## Completed checks
 
 - Parsed every SKILL.md YAML frontmatter with Ruby's standard YAML parser.
-- Checked exactly five Skills, directory/name equality, descriptions and per-Skill licenses.
+- Checked six Skills (five adaptations, one original), directory/name equality, descriptions and per-Skill licenses.
 - Compared bundled license texts byte-for-byte with the reviewed upstream license files.
 - Checked per-Skill attribution for source revision and modification notices.
 - Checked repository Markdown relative links.
@@ -15,6 +15,12 @@ Reviewed on 2026-11-04. These are instruction-only Skill adaptations.
   are bundled in the release.
 - Reviewed the public file set to exclude task-specific inputs, real session history,
   credentials and local account paths.
+
+## LITE revision (2026-11-04)
+
+- Re-parsed all six SKILL.md frontmatters after the LITE rewrite.
+- Confirmed each adaptation's ATTRIBUTION.md records the LITE modification.
+- Confirmed `sprint-understanding-check/LICENSE` names the repository author, not an upstream author.
 
 ## Limits
 
